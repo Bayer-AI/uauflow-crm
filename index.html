@@ -1,6 +1,14 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
   <head>
+    <script>
+      try {
+        const userId = localStorage.getItem('crm_core_auth_last_user_v1');
+        if (userId && localStorage.getItem(`crm_core_theme_${userId}`) === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch { /* First visit stays in the dark default. */ }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -21,8 +29,8 @@
     <meta property="og:description" content="CRM multi-tenant com atendimento e runtime próprio de IA">
     <meta name="twitter:description" content="CRM multi-tenant com atendimento e runtime próprio de IA">
     <link rel="icon" href="/uauflow-crm/uauflow-symbol.svg" type="image/svg+xml">
-    <script type="module" crossorigin src="/uauflow-crm/assets/index-Dw4i3g0W.js"></script>
-    <link rel="stylesheet" crossorigin href="/uauflow-crm/assets/index-CQ2DFzIO.css">
+    <script type="module" crossorigin src="/uauflow-crm/assets/index-Blg9mAq0.js"></script>
+    <link rel="stylesheet" crossorigin href="/uauflow-crm/assets/index-A3Bdeemw.css">
   <link rel="manifest" href="/uauflow-crm/manifest.webmanifest"></head>
 
   <body>
